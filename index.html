@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportMate - Your Ultimate Gear Guide</title>
+  <link rel="icon" href="bot.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Top Bar with Image and Title -->
+    <div class="top-bar">
+      <div class="image-container">
+        <img src="bot.png" alt="SportMate Bot" id="chatbot-image" />
+      </div>
+      <header>
+        <h1>SportMate</h1>
+      </header>
+    </div>
+
+    <!-- Chatbox -->
+    <div class="chatbox-container">
+      <!-- Chat Window -->
+      <div id="messages" class="messages"></div> <!-- Chat messages -->
+
+      <!-- User Input Section -->
+      <div class="input-section">
+        <input 
+          type="text" 
+          id="user-input" 
+          placeholder="Ask me about sports gear..." 
+          autocomplete="off" 
+          autofocus="true" 
+        />
+        <button id="send-button" class="send-button">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="moving-message-container">
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+      Your Ultimate Gear Guide!
+    </marquee>
+  </div>
+
+  <script type="text/javascript" src="constants.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="speech.js"></script>
+</body>
+</html>
